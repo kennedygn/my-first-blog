@@ -8,16 +8,13 @@
             <h1><a href="/">Welcome to Kennedy's blog!</a></h1>
         </header>
 
-        <article>
-            <h2><a href="/">My first post!</a></h2>
-            <time>Published on 05/23/2023 at 09:21 AM</time>
-            <p>This is my first post on this blog. I am looking forward to more!</p>
-        </article>
 
+    {% for post in posts %}
         <article>
-            <h2><a href="/">My second post</a></h2>
-            <time>Published on 05/23/2023 at 10:30 AM</time>
-            <p>This is my second post on this blog. I am looking forward to more!</p>
+            <h2><a href="">{{ post.title }}</a></h2>
+            <time>Published: {{post.published_date }}</time>
+            <p>{{ post.text|linebreaksbr }}</p>
         </article>
+    {% endfor %}
     </body>
 </html>
