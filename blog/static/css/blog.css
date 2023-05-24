@@ -57,6 +57,16 @@ h4 {
     float: right;
 }
 
+#box {
+    width: 200px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 43%;
+    transform: translate(-100%, -10%);
+}
+
+
 .btn-secondary,
 .btn-secondary:visited {
     color: #ba80db;
